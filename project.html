@@ -9,11 +9,11 @@
     <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <hearder>
+    <header>
         <nav class="mobile-nav">
             <div class="m-nav-wrapper">
                 <div class="mobile-nav-bar">
-                    <a href="index.html"><img src="images/Logo-white.png" class="nav-logo"></a>
+                    <a href="index.html"><img src="images/Logo-white.png" class="nav-logo" alt="logo-img"></a>
                     <a href="#" class="hamburger">
                         <i class="fa-solid fa-bars fa-lg icon--white"></i>
                         <i class="fa-solid fa-xmark fa-lg icon--white" style="display:none"></i>
@@ -26,7 +26,21 @@
                 </ul>
             </div>
         </nav>
-    </hearder>
+        <nav class="d-nav">
+            <div class="d-nav-wrapper">
+                <div class="d-logo-wrapper">
+                    <a href="index.html"><img src="images/logo-gray-transp.png" class="d-nav-logo" alt="logo-img"></a>
+                </div>
+                <div class="d-nav-bar">
+                    <ul>
+                        <li><a class="d-nav-link link-home" href="index.html">HOME</a></li>
+                        <li><a class="d-nav-link link-about" href="about.html">ABOUT</a></li>
+                        <li><a class="d-nav-link link-project active" href="project.html">PROJECT<div class="point-dot"></div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container">
         <section class="home-banner">
             <div class="spline">
@@ -51,11 +65,11 @@
             <div class="col-12 home-project-wrapper">
                 <div class="section-discription">
                     <h3>DEVELOPMENT<div class="point-dot"></div></h3>
-                    <p class="body--gray">I like building solutions that are reusable and maintainable.</h5>
+                    <p class="body--gray">I like building solutions that are reusable and maintainable.</p>
                 </div>
                 <div class="grid">
-                    <div class="col-12 col-6-md col-12-lg m-project-card-box">
-                        <div class="grid m-project-card-item">
+                    <div class="col-12 col-6-md col-12-lg m-project-card-item">
+                        <div class="grid project-content-box-wrapper">
                             <div class="col-12 col-6-lg project-thumbnail project1-img"></div>
                             <div class="col-12 col-6-lg project-content-box">
                                 <p class="body--gray project-type">Front-end</p>
@@ -72,120 +86,117 @@
                             </div>
                         </div>
                     </div>
-                        <div class="col-12 col-6-md col-12-lg m-project-card-item">
-                            <div class="grid project-content-box-wrapper">
-                                <div class="col-12 col-6-lg project-thumbnail project2-img"></div>
-                                <div class="col-12 col-6-lg project-content-box">
-                                    <p class="body--gray project-type">Front-end</p>
-                                    <h4 class="project-title">Responsive Business Website</h4>
-                                    <p class="body--gray project-discription">The goal was to demonstrate CSS skills using Media Query for responsive design with mobile UI patterns.</p>
-                                    <div class="project-skills">
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>JS</li>
-                                            <li>Figma</li>
-                                        </ul>
-                                        <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-6-md col-12-lg m-project-card-item">
-                            <div class="grid project-content-box-wrapper">
-                                <div class="col-12 col-6-lg project-thumbnail project3-img"></div>
-                                <div class="col-12 col-6-lg project-content-box">
-                                    <p class="body--gray project-type">Front-end</p>
-                                    <h4 class="project-title">HTML Email Template</h4>
-                                    <p class="body--gray project-discription">The project aimed to create a responsive promotion email template for a fictional soap brand using HTML, CSS and JS.</p>
-                                    <div class="project-skills">
-                                        <ul>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>Figma</li>
-                                        </ul>
-                                        <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-6-md col-12-lg m-project-card-item">
-                            <div class="grid project-content-box-wrapper">
-                                <div class="col-12 col-6-lg project-thumbnail project4-img"></div>
-                                <div class="col-12 col-6-lg project-content-box">
-                                    <p class="body--gray project-type">Front-end</p>
-                                    <h4 class="project-title">Webflow Website</h4>
-                                    <p class="body--gray project-discription">The objective of the project was to develop a business website designed to present counselling services and facilitate inquiries by utilizing a contact form.</p>
-                                    <div class="project-skills">
-                                        <ul>
-                                            <li>Figma</li>
-                                            <li>Webflow</li>
-                                        </ul>
-                                        <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
-                                    </div>
+                    <div class="col-12 col-6-md col-12-lg m-project-card-item">
+                        <div class="grid project-content-box-wrapper">
+                            <div class="col-12 col-6-lg project-thumbnail project2-img"></div>
+                            <div class="col-12 col-6-lg project-content-box">
+                                <p class="body--gray project-type">Front-end</p>
+                                <h4 class="project-title">Responsive Business Website</h4>
+                                <p class="body--gray project-discription">The goal was to demonstrate CSS skills using Media Query for responsive design with mobile UI patterns.</p>
+                                <div class="project-skills">
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JS</li>
+                                        <li>Figma</li>
+                                    </ul>
+                                    <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <a class="button button--blue more-project" href="#">More Projects<i class="fa-solid fa-arrow-right"></i></a> -->
+                    <div class="col-12 col-6-md col-12-lg m-project-card-item">
+                        <div class="grid project-content-box-wrapper">
+                            <div class="col-12 col-6-lg project-thumbnail project3-img"></div>
+                            <div class="col-12 col-6-lg project-content-box">
+                                <p class="body--gray project-type">Front-end</p>
+                                <h4 class="project-title">HTML Email Template</h4>
+                                <p class="body--gray project-discription">The project aimed to create a responsive promotion email template for a fictional soap brand using HTML, CSS and JS.</p>
+                                <div class="project-skills">
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Figma</li>
+                                    </ul>
+                                    <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-6-md col-12-lg m-project-card-item">
+                        <div class="grid project-content-box-wrapper">
+                            <div class="col-12 col-6-lg project-thumbnail project4-img"></div>
+                            <div class="col-12 col-6-lg project-content-box">
+                                <p class="body--gray project-type">Front-end</p>
+                                <h4 class="project-title">Webflow Website</h4>
+                                <p class="body--gray project-discription">The objective of the project was to develop a business website designed to present counselling services and facilitate inquiries by utilizing a contact form.</p>
+                                <div class="project-skills">
+                                    <ul>
+                                        <li>Figma</li>
+                                        <li>Webflow</li>
+                                    </ul>
+                                    <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </section>
 
         <section class="grid about-project-design">
             <div class="col-12 about-project-design-wrapper">
                 <div class="section-discription">
                     <h3>DESIGN<div class="point-dot"></div></h3>
-                    <p class="body--gray">I seek for inspirations from design and like creating attractive product.</h5>
+                    <p class="body--gray">I seek for inspirations from design and like creating attractive product.</p>
                 </div>
-                    <div class="grid m-project-card-box">
-                        <div class="col-12 col-4-md col-4-lg m-project-card-item">
-                            <div class="d-project-thumbnail d-project1"></div>
-                            <div class="d-project-content-box">
-                                <p class="body--gray project-type">Graphic Design</p>
-                                <h4 class="project-title">Movie Poster</h4>
-                                <div class="project-skills">
-                                    <!-- <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JS</li>
-                                    </ul> -->
-                                    <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-4-md col-4-lg m-project-card-item">
-                            <div class="d-project-thumbnail d-project2"></div>
-                            <div class="d-project-content-box">
-                                <p class="body--gray project-type">Graphic Design</p>
-                                <h4 class="project-title">Banner Design</h4>
-                                <div class="project-skills">
-                                    <!-- <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JS</li>
-                                    </ul> -->
-                                    <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-4-md col-4-lg m-project-card-item">
-                            <div class="d-project-thumbnail d-project3"></div>
-                            <div class="d-project-content-box">
-                                <p class="body--gray project-type">UX/UI Design</p>
-                                <h4 class="project-title">Mobile App Design</h4>
-                                <div class="project-skills">
-                                    <!-- <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JS</li>
-                                    </ul> -->
-                                    <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
-                                </div>
+                <div class="grid m-project-card-box">
+                    <div class="col-12 col-4-md col-4-lg m-project-card-item">
+                        <div class="d-project-thumbnail d-project1"></div>
+                        <div class="d-project-content-box">
+                            <p class="body--gray project-type">Graphic Design</p>
+                            <h4 class="project-title">Movie Poster</h4>
+                            <div class="project-skills">
+                                <!-- <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul> -->
+                                <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-4-md col-4-lg m-project-card-item">
+                        <div class="d-project-thumbnail d-project2"></div>
+                        <div class="d-project-content-box">
+                            <p class="body--gray project-type">Graphic Design</p>
+                            <h4 class="project-title">Banner Design</h4>
+                            <div class="project-skills">
+                                <!-- <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul> -->
+                                <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-4-md col-4-lg m-project-card-item">
+                        <div class="d-project-thumbnail d-project3"></div>
+                        <div class="d-project-content-box">
+                            <p class="body--gray project-type">UX/UI Design</p>
+                            <h4 class="project-title">Mobile App Design</h4>
+                            <div class="project-skills">
+                                <!-- <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul> -->
+                                <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="grid contact">
@@ -196,23 +207,23 @@
                 </div>
                 <div class="contact-message">
                     <p class="body--gray">Feel free to reach out to me with any questions about me and my projects! If you would like to work with me I'm available for you!</p>
-                    <!-- <div class="social-media-icons">
-                        <a href="http://www.linkedin.com/in/sora-noh" target="new"><i class="fa-brands fa-linkedin fa-lg icon--gray"></i></a>
-                        <a href="#"><i class="fa-solid fa-at fa-lg icon--gray"></i></a>
-                        <a href="http://github.com/nosora0422" target="new"><i class="fa-brands fa-github fa-lg icon--gray"></i></a>
-                    </div> -->
                 </div>
             </div>
         </section>
         <a class="logo" href="https://spline.design"></a>
-</div>
-<footer>
+    </div>
 
-</footer>
-    <script
-    src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-    crossorigin="anonymous"></script>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="social-media-box">
+                <a class="social-media-icon" href="http://www.linkedin.com/in/sora-noh" target="new"><i class="fa-brands fa-linkedin fa-lg icon--gray"></i></a>
+                <a class="social-media-icon" href="#"><i class="fa-solid fa-at fa-lg icon--gray"></i></a>
+                <a class="social-media-icon" href="http://github.com/nosora0422" target="new"><i class="fa-brands fa-github fa-lg icon--gray"></i></a>
+            </div>
+            <p class="copyright"> &copy; Sora Noh 2023</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/myscript.js"></script>
     <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
     <script type="importmap">

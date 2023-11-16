@@ -9,12 +9,11 @@
     <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <body>
-        <hearder>
+        <header>
             <nav class="mobile-nav">
                 <div class="m-nav-wrapper">
                     <div class="mobile-nav-bar">
-                        <a href="index.html"><img src="images/Logo-white.png" class="nav-logo"></a>
+                        <a href="index.html"><img src="images/Logo-white.png" class="nav-logo" alt="logo-img"></a>
                         <a href="#" class="hamburger">
                             <i class="fa-solid fa-bars fa-lg icon--white"></i>
                             <i class="fa-solid fa-xmark fa-lg icon--white" style="display:none"></i>
@@ -26,9 +25,22 @@
                         <li><a class="mobile-nav-link link-project" href="project.html">PROJECT</a></li>
                     </ul>
                 </div>
-            </div>
             </nav>
-        </hearder>
+            <nav class="d-nav">
+                <div class="d-nav-wrapper">
+                    <div class="d-logo-wrapper">
+                        <a href="index.html"><img src="images/logo-gray-transp.png" class="d-nav-logo" alt="logo-img"></a>
+                    </div>
+                    <div class="d-nav-bar">
+                        <ul>
+                            <li><a class="d-nav-link link-home" href="index.html">HOME</a></li>
+                            <li><a class="d-nav-link link-about" href="about.html">ABOUT</a></li>
+                            <li><a class="d-nav-link link-project active" href="project.html">PROJECT<div class="point-dot"></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <div class="container">
             <section class="project-detail-banner">
                     <div class="grid project-datail-banner-wrapper">
@@ -67,7 +79,7 @@
                                     <p class="body--white">The initial process started with a mindmap on Figma to brainstorm elements related to this project. The brainstorming process included steps defining my core values, mission, and goal. In addition, the elements such as colours, shapes and messages represent my personality and history were added.</p>
                                 </div>
                                 <div class="col-12 col-6-lg project-info-img-wrapper">
-                                    <img class="project-info-img detail-img1">
+                                    <div class="project-info-img detail-img1"></div>
                                 </div>
                             </div>
                             <div class="grid article">
@@ -76,18 +88,18 @@
                                     <p class="body--white">Based on the mindmap, logo sketches were created on Procreate and the final two logos were developed with variations. When sketching logos, my interests and core values were considered as main elements. This resulted in the use of rounded edges and circles that represent unity, commitment, love or community. </p>
                                 </div>
                                 <div class="col-12 col-6-lg project-info-img-wrapper">
-                                    <img class="project-info-img detail-img2">
+                                    <div class="project-info-img detail-img2"></div>
                                 </div>
                             </div>
                             <div class="grid article">
                                 <div class="col-12 col-6-lg">
                                     <h5 class="h5--white">DEVELOPMENT</h5>
-                                    <p class="body--white">1. At the development stage, the SVG file was optimized and minimized with SVGOMG. The process helped convert the SVG code into clean and readable code. All style tags for SVG were moved to a separate CSS file in order to organize all styles in a single file.<br /> </p>
-                                    <p class="body--white">2. The challenge was to animate each character of the brand name that were the SVG elements as a part of the logo. Initially, each character was given with own id name to animate with the keyframe, However, this approach proved to be time-consuming and repetitive. <br /> </p>
-                                    <p class="body--white">3. Therefore, the same class names were assigned to these elements instead, enabling the use of 'querySelectorAll()' and 'for' loop statement. In the final step, the animation was completed using a user-defined function with the 'animate()' method. <br /> </p>
+                                    <p class="body--white">1. At the development stage, the SVG file was optimized and minimized with SVGOMG. The process helped convert the SVG code into clean and readable code. All style tags for SVG were moved to a separate CSS file in order to organize all styles in a single file.<br> </p>
+                                    <p class="body--white">2. The challenge was to animate each character of the brand name that were the SVG elements as a part of the logo. Initially, each character was given with own id name to animate with the keyframe, However, this approach proved to be time-consuming and repetitive. <br> </p>
+                                    <p class="body--white">3. Therefore, the same class names were assigned to these elements instead, enabling the use of 'querySelectorAll()' and 'for' loop statement. In the final step, the animation was completed using a user-defined function with the 'animate()' method. <br> </p>
                                 </div>
                                 <div class="col-12 col-6-lg project-info-img-wrapper">
-                                    <img class="project-info-img detail-img3">
+                                    <div class="project-info-img detail-img3"></div>
                                 </div>
                             </div>
                         </div>
@@ -115,10 +127,17 @@
             </section>
             <a class="logo" href="https://spline.design"></a>
         </div>
-    <footer>
 
-    </footer>
-        
+        <footer>
+            <div class="footer-wrapper">
+                <div class="social-media-box">
+                    <a class="social-media-icon" href="http://www.linkedin.com/in/sora-noh" target="new"><i class="fa-brands fa-linkedin fa-lg icon--gray"></i></a>
+                    <a class="social-media-icon" href="#"><i class="fa-solid fa-at fa-lg icon--gray"></i></a>
+                    <a class="social-media-icon" href="http://github.com/nosora0422" target="new"><i class="fa-brands fa-github fa-lg icon--gray"></i></a>
+                </div>
+                <p class="copyright"> &copy; Sora Noh 2023</p>
+             </div>
+        </footer>
         <script
         src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
