@@ -69,7 +69,7 @@ window.addEventListener("load", function() {
 
         var myEmIcon = document.createElement('a');
         myEmIcon.classList.add('social-media-icon');
-        myEmIcon.href = '#';
+        myEmIcon.href = 'mailto:nosora0422@gmail.com';
         // myInIcon.target = 'new';
         mySmBox.appendChild(myEmIcon);
 

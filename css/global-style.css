@@ -450,7 +450,6 @@ nav{
     background-color: var(--white);
     height: auto;
     margin-bottom: 40px;
-    margin-left: 10px;
     border-radius: 16px;
     border: 0.3px solid var(--lightgray);
     filter: drop-shadow(0px 0px 6px #aaaaaa);
@@ -459,12 +458,12 @@ nav{
 }
 
 .d-project-card-item{
-    height: 590px;
+    height: 600px;
     display: none;
 }
 
 .d-project-discription{
-    height: 90px;
+    height: 110px;
 }
 .m-project-card-item:hover{
     transform: translate(-6px,-6px);
@@ -480,7 +479,7 @@ nav{
     font-weight: 500;
 }
 
-.project-content-box, .d-project-content-box{
+.project-content-box{
     padding: 16px 20px 32px 20px;
 }
 
@@ -590,7 +589,7 @@ nav{
 
 .m-recom-card{
     width: 100%;
-    padding: 20px 0px;
+    padding: 1.5rem 0px;
 }
 
 .m-recom-card-item{
@@ -979,7 +978,14 @@ nav{
         padding-bottom: 5rem;
     }
 
-    .home-project, .about-project, .about-project-design, .recommendation-wrapper,.about-wrapper, .skills-wrapper, .project-info-wrapper{   
+    .home-project, .about-project, .about-project-design,.about-wrapper, .skills-wrapper, .project-info-wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 180px 24px;
+    }
+
+    .recommendation-wrapper{
+        height: 100vh;
         max-width: 1200px;
         margin: 0 auto;
         padding: 180px 24px;
@@ -1013,7 +1019,7 @@ nav{
     }
 
     .d-project-content-box{
-        padding: 20px 0;
+        padding: 10px 20px;
     }
 
     .project-thumbnail, .design-project-thumbnail{
@@ -1023,10 +1029,11 @@ nav{
 
     .d-project-card-item{
         display: block;
+        margin-bottom: 80px;
     }
 
     .d-project-thumbnail {
-        height: 526px;
+        height: 100%;
         background-image: url('../images/d-project1-thumbnail.jpg');
     }
     .contact-wrapper{
@@ -1047,6 +1054,14 @@ nav{
         position: fixed;
         flex-direction: column;
     }
+
+    .d-home-project-item{
+        display: none;
+    }
+
+
+
+    
 
     .col-1-lg { grid-column: span 1; }
     .col-2-lg { grid-column: span 2; }
