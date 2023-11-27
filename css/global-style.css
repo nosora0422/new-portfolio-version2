@@ -68,7 +68,7 @@ body{
 h1{
     font-size: 1rem;
     font-weight: var(--title-font-weight);
-    margin-bottom: 20px;
+    margin-bottom: 0.5rem;
 }
 
 h2{
@@ -238,8 +238,8 @@ h6{
 
 .point-dot{
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 0.7rem;
+    height: 0.7rem;
     background-color: var(--blue);
     border-radius: 50%;
     margin-left: 5px;
@@ -424,7 +424,6 @@ nav{
 }
 
 .banner-content{
-
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -758,7 +757,7 @@ nav{
 
 
 .about-banner-h2{
-    height: 110%;
+    height: 105%;
     overflow: hidden;
     position: relative;
 }
