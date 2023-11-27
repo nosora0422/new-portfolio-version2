@@ -1,12 +1,12 @@
 $(function(){
-	
+
 	$(".hamburger").on("click", function(){	
 		$('.m-nav-wrapper ul').slideToggle();
 		$('.fa-bars').toggle(); 
 		$('.fa-xmark').toggle();
 	});
 
-    $(".project-list-item1").on('click', function() {
+    $("#project-list-item1").on('click', function() {
         $('.disc2:not(.disc1)').slideUp();
         $('.disc3:not(.disc1)').slideUp();
         $('.disc4:not(.disc1)').slideUp();
@@ -14,7 +14,7 @@ $(function(){
         $('.d-project-thumbnail').css('background-image', 'url(../images/d-project1-thumbnail.jpg)');
     });
 
-    $(".project-list-item2").on('click', function() {
+    $("#project-list-item2").on('click', function() {
         $('.disc1:not(.disc2)').slideUp();
         $('.disc3:not(.disc2)').slideUp();
         $('.disc4:not(.disc2)').slideUp();
@@ -22,7 +22,7 @@ $(function(){
         $('.d-project-thumbnail').css('background-image', 'url(../images/d-project2-thumbnail.jpg)');
         
     });
-    $(".project-list-item3").on('click', function() {
+    $("#project-list-item3").on('click', function() {
         $('.disc1:not(.disc3)').slideUp();
         $('.disc2:not(.disc3)').slideUp();
         $('.disc4:not(.disc3)').slideUp();
@@ -31,7 +31,7 @@ $(function(){
         
         
     });
-    $(".project-list-item4").on('click', function() {
+    $("#project-list-item4").on('click', function() {
         $('.disc1:not(.disc4)').slideUp();
         $('.disc2:not(.disc4)').slideUp();
         $('.disc3:not(.disc4)').slideUp();
@@ -40,10 +40,6 @@ $(function(){
         
     });
 	
-	/* adds a line through clicked li items*/
-	// $('.m-nav-wrapper ul li').on("click", function(){
-	// 	$(this).toggleClass("complete");
-	// });
 });
 
 
@@ -69,7 +65,7 @@ window.addEventListener("load", function() {
 
         var myEmIcon = document.createElement('a');
         myEmIcon.classList.add('social-media-icon');
-        myEmIcon.href = 'mailto:nosora0422@gmail.com';
+        myEmIcon.href = '#';
         // myInIcon.target = 'new';
         mySmBox.appendChild(myEmIcon);
 
@@ -97,34 +93,37 @@ window.addEventListener("load", function() {
         myFooterWrapper.appendChild(myCopyright);
 
         projectClick();
-    });
+
+    });/*Footer Component ends */
 
 
-/*Footer Component ends */
+
 
 /*about banner animation start*/
 
-var aboutH2 = document.querySelectorAll('.about-h2');
-var index = 0;
-var h2Top = '100%';
-function animateH2(){
-    // console.log('hi');
-    for(var i=0; i < aboutH2.length; i++){
-        aboutH2[i].classList.remove('text-in');
+    var aboutH2 = document.querySelectorAll('.about-h2');
+    var index = 0;
+    // var h2Top = '100%';
+    function animateH2(){
+        // console.log('hi');
+        for(var i=0; i < aboutH2.length; i++){
+            aboutH2[i].classList.remove('text-in');
+        }
+        aboutH2[index].classList.add('text-in');
+
+        if(index == aboutH2.length - 1){
+                index=0;
+        } else{
+            index++;
+        }
+        setTimeout(animateH2, 3000);
     }
-    aboutH2[index].classList.add('text-in');
 
-    if(index == aboutH2.length - 1){
-            index=0;
-    }else{
-        index++;
-    }
-    setTimeout(animateH2, 3000);
-}
 
-window.onload=animateH2;
+window.onload=animateH2; /*about banner animation ends*/
 
-/*about banner animation ends*/
+
+
 
 /*Project link start*/
 
@@ -132,11 +131,12 @@ function projectClick(){
     const clickProject1 = document.querySelector('#project1');
 
     clickProject1.addEventListener('click', function(){
-    window.location.href = 'project-detail.html';
-});
-}
+        window.location.href = 'project-detail.html';
+    });
+}; /*Project link ends*/
 
-/*Project link ends*/
+
+
 
 
 // var theBody = document.querySelector('body');
@@ -148,7 +148,7 @@ function projectClick(){
 // var bounds = theBody.getBoundingClientRect();
 
 // myCard.addEventListener('mousemove', mouseAnim);
-// myCard.addEventListener('mouseout', hideMousePointer);
+// // myCard.addEventListener('mouseout', hideMousePointer);
 
 
 // function mouseAnim(e){
@@ -164,4 +164,49 @@ function projectClick(){
 //     myPointer.style.display = 'none';
 // }
 
+
+
+const myAnimation = document.querySelectorAll('.box-animation');
+const myConIcon = document.querySelectorAll('.contact-icon');
+
+const aniObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-animation');
+        }
+            // else {
+            //     entry.target.classList.remove('scroll-animation')
+            // }
+        
+    })
+},
+   {
+    threshold: 0.5
+   });
+
+  for (let i = 0; i < myAnimation.length; i++) {
+    const elements = myAnimation[i];
+    aniObserver.observe(elements);
+  } 
+
+const conObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        const delay = index * 200;
+        if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${delay}ms`;
+            entry.target.classList.add('contact-scroll-animation');
+        }
+            // else {
+            //     entry.target.classList.remove('scroll-animation')
+            // }
+    })
+},
+   {
+    threshold: 0.5
+   });
+
+  for (let i = 0; i < myConIcon.length; i++) {
+    const eachIcon = myConIcon[i];
+    conObserver.observe(eachIcon);
+  } 
 

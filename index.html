@@ -22,9 +22,9 @@
                     </a>
                 </div>
                 <ul style="display: none;">
-                    <li><a class="m-nav-link link-home active" href="index.html">HOME<div class="point-dot"></div></a></li>
-                    <li><a class="m-nav-link link-about" href="about.html">ABOUT</a></li>
-                    <li><a class="m-nav-link link-project" href="project.html">PROJECT</a></li>
+                    <li><a class="m-nav-link active" href="index.html">HOME<div class="point-dot"></div></a></li>
+                    <li><a class="m-nav-link" href="about.html">ABOUT</a></li>
+                    <li><a class="m-nav-link" href="project.html">PROJECT</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,14 +35,13 @@
                 </div>
                 <div class="d-nav-bar">
                     <ul>
-                        <li><a class="d-nav-link link-home active" href="index.html">HOME<div class="point-dot"></div></a></li>
-                        <li><a class="d-nav-link link-about" href="about.html">ABOUT</a></li>
-                        <li><a class="d-nav-link link-project" href="project.html">PROJECT</a></li>
+                        <li><a class="d-nav-link active" href="index.html">HOME<div class="point-dot"></div></a></li>
+                        <li><a class="d-nav-link" href="about.html">ABOUT</a></li>
+                        <li><a class="d-nav-link" href="project.html">PROJECT</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
     <div class="container">
         <section class="home-banner">
@@ -52,7 +51,10 @@
             <div class="grid banner-wrapper">
                 <div class="col-12 banner-content">
                     <div class="banner-title">
-                        <h1>SORA NOH</h1>
+                        <div class="banner-avatar-box">
+                        <h1>SORA NOH</h1><img class="avatar" 
+                        src="images/iphone-avatar.png" alt="iphone-avatar">
+                    </div>
                         <h2>FRONT-END<br>DEVELOPER<div class="point-dot"></div></h2>
                     </div>
                     <div class="body--gray banner-discription">
@@ -61,11 +63,13 @@
                     </div>
                 </div>
             </div>
-            <svg class="arrow-down" width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="path-gray" d="M1 1L15.1375 12L30 1" stroke-width="2"/>
-            </svg>
+            <a href="#first-section">
+                <svg class="arrow-down" width="31" height="14" viewBox="0 0 31 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="path-gray" d="M1 1L15.1375 12L30 1" stroke-width="2"/>
+                </svg>
+            </a>
         </section>
-        <section class="grid home-project">
+        <section class="grid home-project" id="first-section">
             <div class="col-12 home-project-wrapper">
                <div class="section-discription">
                     <div class="h3-wrapper">
@@ -79,7 +83,7 @@
                         <div class="grid project-content-box-wrapper">
                             <div class="col-12 col-6-lg project-thumbnail d-project-thumbnail"></div>
                             <div class="col-12 col-6-lg d-project-content-box">
-                                <div class="project-list-item1">
+                                <div class="d-project-title-box" id="project-list-item1">
                                     <p class="body--gray project-type">Front-end</p>
                                     <h4 class="project-title">Logo Animation</h4>
                                     <div class="disc1" id="disc-id1">
@@ -94,7 +98,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-list-item2">
+                                <div class="d-project-title-box" id="project-list-item2">
                                     <p class="body--gray project-type">Front-end</p>
                                     <h4 class="project-title">Responsive Business Website</h4>
                                     <div class="disc2" id="disc-id2">
@@ -111,7 +115,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-list-item3">
+                                <div class="d-project-title-box" id="project-list-item3">
                                     <p class="body--gray project-type">Front-end</p>
                                     <h4 class="project-title">HTML Email Template</h4>
                                     <div class="disc3" id="disc-id2">
@@ -127,8 +131,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-list-item4">
-                                    <p class="body--gray d-project-type">Front-end</p>
+                                <div class="d-project-title-box" id="project-list-item4">
+                                    <p class="body--gray project-type">Front-end</p>
                                     <h4 class="project-title">Webflow Website</h4>
                                     <div class="disc4" id="disc-id2">
                                         <p class="body--gray d-project-discription">The objective of the project was to develop a business website designed to present counselling services and facilitate inquiries by utilizing a contact form.</p>
@@ -146,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-6-md col-12-lg m-project-card-item d-home-project-item">
-                        <div class="grid project-content-box-wrapper">
+                        <div class="grid project-content-box-wrapper" id="project1">
                             <div class="col-12 col-6-lg project-thumbnail project1-img"></div>
                             <div class="col-12 col-6-lg project-content-box">
                                 <p class="body--gray project-type">Front-end</p>
@@ -264,7 +268,7 @@
                             </div>
                             <div class="m-recom-person">
                                 <div>
-                                    <p class="m-recom-name">Giselle Praweenwongwuth</p>
+                                    <p class="m-recom-name">Giselle</p>
                                     <p class="m-recom-title">BCIT Student</p>
                                 </div>
                                 <div class="m-recom-img person1"></div>
@@ -278,7 +282,7 @@
                             </div>
                             <div class="m-recom-person">
                                 <div>
-                                    <p class="m-recom-name">Giselle Praweenwongwuth</p>
+                                    <p class="m-recom-name">Giselle</p>
                                     <p class="m-recom-title">BCIT Student</p>
                                 </div>
                                 <div class="m-recom-img person1"></div>
@@ -296,17 +300,16 @@
                 </div>
                 <div class="contact-message">
                     <p class="body--gray">Feel free to reach out to me with any questions about me and my projects!  I'm here and ready to collaborate with you on any interesting web development project!</p>
-                    <!-- <div class="social-media-icons">
-                        <a href="http://www.linkedin.com/in/sora-noh" target="new"><i class="fa-brands fa-linkedin fa-lg icon--gray"></i></a>
-                        <a href="#"><i class="fa-solid fa-at fa-lg icon--gray"></i></a>
-                        <a href="http://github.com/nosora0422" target="new"><i class="fa-brands fa-github fa-lg icon--gray"></i></a>
-                    </div> -->
+                    <div class="contact-social-media-icons">
+                        <a href="http://www.linkedin.com/in/sora-noh" target="new"><i class="fa-brands fa-linkedin fa-lg contact-icon icon--gray"></i></a>
+                        <a href="#"><i class="fa-solid fa-at fa-lg contact-icon icon--gray"></i></a>
+                        <a href="http://github.com/nosora0422" target="new"><i class="fa-brands fa-github fa-lg contact-icon icon--gray"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
         <a class="logo" href="https://spline.design"></a>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/myscript.js"></script>
