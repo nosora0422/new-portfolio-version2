@@ -865,7 +865,7 @@ nav{
 
 .project-step{
     border-radius: 20px;
-    border: 0.3px solid var(--white);
+    border: 0.5px solid var(--white);
     padding: 0.2rem 0.8rem;
 }
 
