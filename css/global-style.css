@@ -1161,7 +1161,7 @@ code{
     .contact-icon{
         opacity: 0;
         margin-right: 50px;
-        transform: translateY(50px);
+        transform: translateY(30px);
         transition: opacity 0.3s ease-out, transform 0.7s ease-out;
     }
     .contact-scroll-animation{

@@ -65,8 +65,7 @@ window.addEventListener("load", function() {
 
         var myEmIcon = document.createElement('a');
         myEmIcon.classList.add('social-media-icon');
-        myEmIcon.href = '#';
-        // myInIcon.target = 'new';
+        myEmIcon.href = 'mailto:nosora0422@gmail.com';
         mySmBox.appendChild(myEmIcon);
 
         var myGHIcon = document.createElement('a');
@@ -103,7 +102,6 @@ window.addEventListener("load", function() {
 
     var aboutH2 = document.querySelectorAll('.about-h2');
     var index = 0;
-    // var h2Top = '100%';
     function animateH2(){
         // console.log('hi');
         for(var i=0; i < aboutH2.length; i++){
@@ -174,10 +172,6 @@ const aniObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('scroll-animation');
         }
-            // else {
-            //     entry.target.classList.remove('scroll-animation')
-            // }
-        
     })
 },
    {
@@ -196,9 +190,6 @@ const conObserver = new IntersectionObserver((entries) => {
             entry.target.style.transitionDelay = `${delay}ms`;
             entry.target.classList.add('contact-scroll-animation');
         }
-            // else {
-            //     entry.target.classList.remove('scroll-animation')
-            // }
     })
 },
    {
