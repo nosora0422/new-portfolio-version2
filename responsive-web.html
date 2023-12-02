@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The goal of the project was to create a personal logo animation combining skills of graphic design and animation using CSS keyframes.">
     <meta name="keywords" content="logo-animation css JavaScript-animation keyframes">
-    <title>Logo Animation Project</title>
+    <title>Responsive Website</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global-style.css">
     <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
@@ -57,16 +57,17 @@
                 <div class="grid project-datail-banner-wrapper">
                     <div class="col-12 project-detail-box">
                         <div class="grid m-project-detail-card-item">
-                            <div class="col-12 col-6-lg project-thumbnail project1-img"></div>
+                            <div class="col-12 col-6-lg project-thumbnail project2-img"></div>
                             <div class="col-12 col-6-lg project-content-box">
                                 <p class="body--gray project-type">Front-end</p>
-                                <h4 class="h4-gray project-title">Logo Animation</h4>
-                                <p class="body--gray project-discription">The goal of the project was to create a personal logo animation combining skills of graphic design and animation using CSS keyframes.</p>
+                                <h4 class="h4-gray project-title">Responsive Business Website</h4>
+                                <p class="body--gray project-discription">The goal was to demonstrate CSS skills using Media Query for responsive design with mobile UI patterns.</p>
                                 <div class="project-skills project-detail-skills">
                                     <ul>
                                         <li>HTML</li>
                                         <li>CSS</li>
                                         <li>JS</li>
+                                        <li>Jquery</li>
                                     </ul>
                                     <a class="button button--blue soft-shadow demo-btn" href="https://logoanimation.sarahnoh.ca/" target="new">Live Demo<i class="fa-solid fa-arrow-right "></i></a>
                                 </div>
@@ -84,27 +85,16 @@
             <div class="grid project-info-wrapper">
                 <div class="col-12 project-info-content ">
                     <h3>OVERVIEW<span class="point-dot point-dot-blue"></span></h3>
-                    <p class="body--gray overview">The project includes a personal logo that was created as an SVG file and the use of <span class="body--highlight">CSS keyframes and JS functions</span>. The endeavour demanded considerable dedication to the brainstorming and sketching phases, as the logo bore deep significance to personal identity. <span class="body--highlight">The logo animation was implemented to a single landing page</span> in order to go beyond the initial goal and showcase the example of usage in the real world.</p>
+                    <p class="body--gray overview">The choice of the topic aimed to highlight the development of a business website that not only prioritizes responsive design but also emphasizes the implementation of dynamic Jquery functions and JavaScript plug-ins.</p>
                     <div class="d-project-card-box">
                         <div class="project-inner-box box-animation">
                             <div class="grid article">
                                 <div class="col-12 col-6-lg article-section-description">
-                                    <h5 class="h5--white">BRAINSTORMING</h5>
-                                    <p class="body--white">The initial process started with a mindmap on Figma to brainstorm elements related to this project. The brainstorming process included steps defining my core values, mission, and goal. In addition, the elements such as colours, shapes and messages represent my personality and history were added.</p>
+                                    <h5 class="h5--white">SITEMAP AND WIREFRAME</h5>
+                                    <p class="body--white">Following the research phase, initial design and planning steps were taken. The sitemap was created on Figjam with consideration of the main audience and user group. Afterwards, a low-fi wireframe for each page was created on Figma.</p>
                                 </div>
                                 <div class="col-12 col-6-lg project-info-img-wrapper">
-                                    <img src="./images/Mindmap.png" class="project-info-img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-inner-box box-animation">  
-                            <div class="grid article">
-                                <div class="col-12 col-6-lg article-section-description">
-                                    <h5 class="h5--white">LOGO SKETCH</h5>
-                                    <p class="body--white">Based on the mindmap, logo sketches were created on Procreate and the final two logos were developed with variations. When sketching logos, my interests and core values were considered as main elements. This resulted in the use of rounded edges and circles that represent unity, commitment, love or community. </p>
-                                </div>
-                                <div class="col-12 col-6-lg project-info-img-wrapper">
-                                    <img src="./images/logo-sketch.PNG" class="project-info-img">
+                                    <img src="./images/responsive-web-wireframe.jpg" class="project-info-img">
                                 </div>
                             </div>
                         </div>
@@ -113,38 +103,32 @@
                                 <div class="col-12 col-6-lg article-section-description">
                                     <h5 class="h5--white">DEVELOPMENT</h5>
                                     <h6 class="h6--white">01</h6>
-                                    <p class="body--white">At the development stage, the SVG file was optimized and minimized with SVGOMG. The process helped convert the SVG code into clean and readable code. All style tags for SVG were moved to a separate CSS file in order to organize all styles in a single file.</p>
+                                    <p class="body--white">The process was started with a mobile-first approach for an efficient development process. As I started from mobile view first, was able to identify potential challenges early, streamline workflows, and reduce the need for extensive revisions during later stages of development.</p>
                                 </div>
                                 <div class="col-12 col-6-lg">
                                     <!-- <div class="project-info-img detail-img3"></div> -->
 <pre>
 <code>
-    <span class="green-code">// style.css</span>
 
-    <span class="yellow-code">.cls-1</span>{
-        fill:#bcbec0;
-    }
-    
-    <span class="yellow-code">.cls-2</span>{
-        fill:none;
-        stroke:#bcbec0;
-        stroke-miterlimit:10;
-        stroke-width:.47px;
-    }
-    
-    <span class="yellow-code">.cls-3</span>{
-        stroke:#000;
-        stroke-miterlimit:10;
-        stroke-width:.25px;
-        transition-timing-function: ease-in;
+    <span class="green-code">//Mobile Break Point</span>
+    <span class="puple-code">@media</span> screen and <span class="skyblue-code">(min-width: 568px)</span> {
+        .
+        .
+        .
     }
 
-    <span class="yellow-code">.cls-4</span>{
-        fill: none;
-        stroke: #000;
-        stroke-linejoin: round;
-        stroke-width: 4px;
-        animation: arrowAnimation 1s ease-in-out infinite;
+    <span class="green-code">//Tablet Break Point</span>
+    <span class="puple-code">@media</span> screen and <span class="skyblue-code">(min-width: 834px)</span> {
+        .
+        .
+        .
+    }
+
+    <span class="green-code">//Desktop Break Point</span>
+    <span class="puple-code">@media</span> screen and <span class="skyblue-code">(min-width: 1080px)</span> {
+        .
+        .
+        .
     }
 
 
@@ -159,149 +143,34 @@
                                 <div class="col-12 col-6-lg article-section-description">
                                     <h5 class="h5--white">DEVELOPMENT</h5>
                                     <h6 class="h6--white">02</h6>
-                                    <p class="body--white">The challenge was to animate each character of the brand name that were the SVG elements as a part of the logo. Initially, each character was given with own id name to animate with the keyframe, However, this approach proved to be time-consuming and repetitive.</p>                                
+                                    <p class="body--white">With the rough structure in place, a Flickity carousel plugin was implemented for dynamic design. In addition, an accordion-style navigation bar was incorporated using JS in order to demonstrate the use of mobile UI design patterns.</p>                                
                                 </div>
                                 <div class="col-12 col-6-lg">
                                     <!-- <div class="project-info-img detail-img3"></div> -->
 <pre>
 <code>
-    <span class="puple-code">@keyframes</span> <span class="skyblue-code">noMove</span> {
-        0%{
-            <span class="skyblue-code">stroke-dashoffset</span>: 289.5;
-        }
-        5%{
-            <span class="skyblue-code">stroke-dashoffset</span>: 289.5;
-        }
-        30%{
-            <span class="skyblue-code">stroke-dashoffset</span>: -160.4;
-        }
-        100%{
-            <span class="skyblue-code">stroke-dashoffset</span>: -160.4;
-        }
-    }
-    
-    <span class="puple-code">@keyframes</span> <span class="skyblue-code">connectionMove</span> {
-        0%{
-            <span class="skyblue-code">stroke-dashoffset</span>: 75;
-        }
-        20%{
-            <span class="skyblue-code">stroke-dashoffset</span>: 75;
-        }
-        30%{
-            <span class="skyblue-code">stroke-dashoffset</span>: 0;
-    
-        }
-        100%{
-            <span class="skyblue-code">stroke-dashoffset</span>: 0;
-    
-        }
-    }
-    
-    .
-    .
-    .
+    <span class="green-code">//Jquery Hamberger Menu</span>
+    (<span class="blue-code">function()</span>{
+        $(".hamburger").on("click", function(){	
+            $('.mobile ul').<span class="orange-code">slideToggle()</span>;
+            $('.fa-bars').<span class="orange-code">toggle()</span>; 
+            $('.fa-xmark').<span class="orange-code">toggle()</span>; 
+        });
+    });
 
+    <span class="green-code">//Flickity carousel</span>
     
-
-    <span class="puple-code">@keyframes</span> <span class="skyblue-code">pointMove</span>{
-        0%{
-            <span class="skyblue-code">transform</span>: rotate(0deg);
-        }
-        50%{
-            <span class="skyblue-code">transform</span>: rotate(1080deg);
-        }
-        100%{
-            <span class="skyblue-code">transform</span>: rotate(1080deg);
-        }
-        
-    }
-    
-    <span class="puple-code">@keyframes</span> <span class="skyblue-code">ooMove</span>{
-        0%{
-            <span class="skyblue-code">transform</span>: translateY(0%);
-            <span class="skyblue-code">animation-timing-function</span>: ease-out;
-        }
-        50%{
-            <span class="skyblue-code">transform</span>: translateY(-45%);
-            <span class="skyblue-code">animation-timing-function</span>: ease-in;
-        }
-        100%{
-            <span class="skyblue-code">transform</span>: translateY(0%);
-            <span class="skyblue-code">animation-timing-function</span>: ease-out;
-        }
-    }
-    
-    .
-    .
-    .
 
 </code>
 </pre> 
                                 </div>
                             </div>
                         </div>
-                        <div class="project-inner-box box-animation">       
-                            <div class="grid article">
-                                <div class="col-12 col-6-lg article-section-description">
-                                    <h5 class="h5--white">DEVELOPMENT</h5>
-                                    <h6 class="h6--white">03</h6>
-                                    <p class="body--white">Therefore, the same class names were assigned to these elements instead, enabling the use of 'querySelectorAll()' and 'for' loop statement. In the final step, the animation was completed using a user-defined function with the 'animate()' method.</p>
-                                </div>
-                                <div class="col-12 col-6-lg">
-                                    <!-- <div class="project-info-img detail-img3"></div> -->
-<pre>
-<code>
-    <span class="skyblue-code">var shape</span> = document.querySelector('#point');
-    <span class="skyblue-code">var shapelength</span> = shape.getTotalLength();
-    console.log(shapelength);
-
-    <span class="skyblue-code">var myName</span> = document.<span class="orange-code">querySelectorAll(".cls-3")</span>;
-
-    <span class="puple-code">for</span>(<span class="skyblue-code">var i = 0; i < myName.length; i++</span>){
-        let company = myName[i];
-        animateMyName(company);
-    };
-
-    <span class="blue-code">function</span> <span class="yellow-code">animateMyName(name)</span>{
-
-        <span class="skyblue-code">name.keyframes</span> = [
-            {
-                transform: "translateY(0)",
-                offset: 0
-            },
-            {
-                transform: "translateY(-25%)",
-                offset: 0.5
-            },
-            {
-                transform: "translateY(0)",
-                offset: 1
-            }
-        ];
-
-        <span class="skyblue-code">name.options</span> = {
-            duration: 1500,
-            easing: "ease",
-            iterations: 2,
-            direction: "normal",
-            delay: 150*i,
-            fill: "both"
-        }
-
-        <span class="skyblue-code">let animateMyName</span> = name.<span class="yellow-code">animate</span>(<span class="skyblue-code">name.keyframes, name.options</span>);
-    };
-
-    
-</code>
-</pre>  
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="takeaway">
+                    <!-- <div class="takeaway">
                         <h3>TAKEAWAY<span class="point-dot point-dot-blue"></span></h3>
                         <p class="body--gray">The experience taught me that creative problem-solving is important in animation projects, as finding innovative solutions to technical challenges can result in building an efficient and effective code.</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -309,20 +178,19 @@
             <div class="col-12 about-project-design-wrapper">
                 <h3>MORE PROJECTS<span class="point-dot"></span></h3>
                 <div class="grid m-project-card-box">
-                    <div class="col-12 col-4-md col-4-lg m-project-card-item" id="project2">
-                        <div class="col-12 col-6-lg project-thumbnail project2-img"></div>
+                    <div class="col-12 col-4-md col-4-lg m-project-card-item" id="project1">
+                        <div class="col-12 col-6-lg project-thumbnail project1-img"></div>
                         <div class="col-12 col-6-lg project-content-box other-project">
                             <p class="body--gray project-type">Front-end</p>
-                            <h4 class="project-title">Responsive Business Website</h4>
-                            <p class="body--gray project-discription">The goal was to demonstrate CSS skills using Media Query for responsive design with mobile UI patterns.</p>
+                            <h4 class="project-title">Logo Animatione</h4>
+                            <p class="body--gray project-discription">The goal of the project was to create a personal logo animation combining skills of graphic design and animation using CSS keyframes.</p>
                             <div class="project-skills">
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
                                     <li>JS</li>
-                                    <li>Figma</li>
                                 </ul>
-                                <a href="responsive-web.html"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-right project-arrow"></i></a>
                             </div>
                         </div>  
                     </div>

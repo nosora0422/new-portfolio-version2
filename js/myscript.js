@@ -92,6 +92,7 @@ window.addEventListener("load", function() {
         myFooterWrapper.appendChild(myCopyright);
 
         projectClick();
+        projectClick2();
 
     });/*Footer Component ends */
 
@@ -131,7 +132,15 @@ function projectClick(){
     clickProject1.addEventListener('click', function(){
         window.location.href = 'project-detail.html';
     });
-}; /*Project link ends*/
+}; 
+
+function projectClick2(){
+    const clickProject2 = document.querySelector('#project2');
+
+    clickProject2.addEventListener('click', function(){
+        window.location.href = 'responsive-web.html';
+    });
+};/*Project link ends*/
 
 
 

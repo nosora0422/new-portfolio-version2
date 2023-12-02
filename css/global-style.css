@@ -8,7 +8,7 @@
     --white:rgb(247, 247, 247);
     --blue:#346DFF;
     --yellow:#FFCD4B;
-    --blackShadow:#1f1f1f;
+    --blackShadow:#c6c6c6;
     --title-font-family: 'Josefin Sans', sans-serif;
     --title-font-weight: 700;
     --banner-title-font-size: 2rem;
@@ -484,8 +484,8 @@ nav{
     height: auto;
     margin-bottom: 40px;
     border-radius: 16px;
-    border: 0.3px solid var(--lightgray);
-    filter: drop-shadow(0px 0px 6px #aaaaaa);
+    /* border: 0.3px solid var(--lightgray); */
+    filter: drop-shadow(0px 0px 4px var(--blackShadow));
     cursor: pointer;
     transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
 }
@@ -500,7 +500,7 @@ nav{
 }
 .m-project-card-item:hover{
     transform: translate(-6px,-6px);
-    filter: drop-shadow(0px 6px 10px #adadad);
+    filter: drop-shadow(0px 6px 10px var(--blackShadow));
 }
 
 .project-content-box-wrapper{
@@ -529,6 +529,7 @@ nav{
     background-size: cover;
     aspect-ratio: 4/3;
     filter: drop-shadow(0 0 3px #aaaaaa);
+    /* box-shadow: inset 2px 2px 6px 4px #c6c6c6; */
     border-radius: 0.8rem;
     /* transition: all 300ms ease-in; */
 }
@@ -623,8 +624,8 @@ nav{
     padding: 28px 28px;
     margin-right: 20px;
     border-radius: 16px;
-    border: 0.3px solid var(--darkgrey);
-    filter: drop-shadow(0 0 6px var(--blackShadow)); 
+    /* border: 0.3px solid var(--darkgrey); */
+    filter: drop-shadow(0 0 3px var(--blackShadow)); 
     cursor: pointer;
 }
 
@@ -858,8 +859,8 @@ nav{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background-position: top;
-    background-size: cover;
+    object-position: top;
+    object-fit: cover;
 }
 
 .project-step{
@@ -872,17 +873,6 @@ nav{
     margin: 40px 0;
 }
 
-.detail-img1{
-    background-image: url('../images/Mindmap.png');
-}
-
-.detail-img2{
-    background-image: url('../images/logo-sketch.PNG');
-}
-
-.detail-img3{
-    background-image: url('../images/code1.png');
-}
 
 pre{
     display: block;
@@ -1044,7 +1034,7 @@ code{
         padding-bottom: 5rem;
     }
 
-    .home-project, .about-project, .about-project-design,.about-wrapper, .skills-wrapper, .project-info-wrapper, .recommendation-wrapper{
+    .home-project, .about-project,.about-wrapper, .skills-wrapper, .project-info-wrapper, .recommendation-wrapper{
         max-width: 1200px;
         margin: 0 auto;
         padding: 180px 24px;
