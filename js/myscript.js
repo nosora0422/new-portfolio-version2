@@ -90,57 +90,30 @@ window.addEventListener("load", function() {
         myCopyright.classList.add('copyright');
         myCopyright.innerText = '\u00A9 Sora Noh 2023';
         myFooterWrapper.appendChild(myCopyright);
-
-        projectClick();
-        projectClick2();
-
     });/*Footer Component ends */
-
-
-
-
-/*about banner animation start*/
-
-    var aboutH2 = document.querySelectorAll('.about-h2');
-    var index = 0;
-    function animateH2(){
-        // console.log('hi');
-        for(var i=0; i < aboutH2.length; i++){
-            aboutH2[i].classList.remove('text-in');
-        }
-        aboutH2[index].classList.add('text-in');
-
-        if(index == aboutH2.length - 1){
-                index=0;
-        } else{
-            index++;
-        }
-        setTimeout(animateH2, 3000);
-    }
-
-
-window.onload=animateH2; /*about banner animation ends*/
-
 
 
 
 /*Project link start*/
 
-function projectClick(){
-    const clickProject1 = document.querySelector('#project1');
 
-    clickProject1.addEventListener('click', function(){
-        window.location.href = 'project-detail.html';
-    });
-}; 
+function redirectToPage(pageId, pageURL) {
+    const project = document.querySelector(pageId);
 
-function projectClick2(){
-    const clickProject2 = document.querySelector('#project2');
+    if (project) {
+        project.addEventListener('click', function() {
+            window.location.href = pageURL;
+        });
+    }
+};
 
-    clickProject2.addEventListener('click', function(){
-        window.location.href = 'responsive-web.html';
-    });
-};/*Project link ends*/
+redirectToPage('#project1', 'logo-animation.html');
+redirectToPage('#project2', 'responsive-web.html');
+redirectToPage('#project3', 'email-template.html');
+redirectToPage('#project4', 'webflow-website.html');
+
+
+/*Project link ends*/
 
 
 
@@ -173,40 +146,5 @@ function projectClick2(){
 
 
 
-const myAnimation = document.querySelectorAll('.box-animation');
-const myConIcon = document.querySelectorAll('.contact-icon');
 
-const aniObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation');
-        }
-    })
-},
-   {
-    threshold: 0.5
-   });
-
-  for (let i = 0; i < myAnimation.length; i++) {
-    const elements = myAnimation[i];
-    aniObserver.observe(elements);
-  } 
-
-const conObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-        const delay = index * 200;
-        if (entry.isIntersecting) {
-            entry.target.style.transitionDelay = `${delay}ms`;
-            entry.target.classList.add('contact-scroll-animation');
-        }
-    })
-},
-   {
-    threshold: 0.5
-   });
-
-  for (let i = 0; i < myConIcon.length; i++) {
-    const eachIcon = myConIcon[i];
-    conObserver.observe(eachIcon);
-  } 
 
