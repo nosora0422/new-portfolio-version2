@@ -92,7 +92,27 @@ window.addEventListener("load", function() {
         myFooterWrapper.appendChild(myCopyright);
     });/*Footer Component ends */
 
+const myConIcon = document.querySelectorAll('.contact-icon');
 
+const conObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        const delay = index * 200;
+        if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${delay}ms`;
+            entry.target.classList.add('contact-scroll-animation');
+        }
+    })
+},
+    {
+    threshold: 0.5
+    });
+
+    for (let i = 0; i < myConIcon.length; i++) {
+    const eachIcon = myConIcon[i];
+    conObserver.observe(eachIcon);
+    } 
+
+    
 
 /*Project link start*/
 
