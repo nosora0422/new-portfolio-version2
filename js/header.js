@@ -229,4 +229,4 @@ class CustomHeader extends HTMLElement {
     }
 
 }
-    customElements.define('custom-header', CustomHeader);
+customElements.define('custom-header', CustomHeader);

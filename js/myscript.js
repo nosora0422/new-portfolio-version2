@@ -53,6 +53,11 @@ window.addEventListener("load", function() {
         myFooterWrapper.classList.add('footer-wrapper');
         myFooter.appendChild(myFooterWrapper);
 
+        var splineIcon = document.createElement('a');
+        splineIcon.classList.add('logo');
+        splineIcon.href = 'https://spline.design';
+        myFooterWrapper.appendChild(splineIcon);
+
         var mySmBox = document.createElement('div');
         mySmBox.classList.add('social-media-box');
         myFooterWrapper.appendChild(mySmBox);
@@ -85,12 +90,15 @@ window.addEventListener("load", function() {
         var myGH = document.createElement('i');
         myGH.classList.add('fa-brands', 'fa-github', 'fa-lg', 'icon--gray');
         myGHIcon.appendChild(myGH);
-
+        
         var myCopyright = document.createElement('p');
         myCopyright.classList.add('copyright');
         myCopyright.innerText = '\u00A9 Sora Noh 2023';
         myFooterWrapper.appendChild(myCopyright);
     });/*Footer Component ends */
+
+
+/*Footer social media icon animation*/
 
 const myConIcon = document.querySelectorAll('.contact-icon');
 
@@ -110,7 +118,7 @@ const conObserver = new IntersectionObserver((entries) => {
     for (let i = 0; i < myConIcon.length; i++) {
     const eachIcon = myConIcon[i];
     conObserver.observe(eachIcon);
-    } 
+} /*Footer social media icon animation ends*/ 
 
     
 
@@ -135,34 +143,6 @@ redirectToPage('#project4', 'webflow-website.html');
 
 /*Project link ends*/
 
-
-
-
-
-// var theBody = document.querySelector('body');
-// var myCard = document.querySelector('.m-project-card-item');
-// var myPointer = document.createElement('div');
-// myPointer.classList.add('mouse-pointer');
-// theBody.appendChild(myPointer);
-
-// var bounds = theBody.getBoundingClientRect();
-
-// myCard.addEventListener('mousemove', mouseAnim);
-// // myCard.addEventListener('mouseout', hideMousePointer);
-
-
-// function mouseAnim(e){
-//     var xPos = e.clientX - bounds.left - myPointer.clientWidth / 2;
-//     var yPos = e.clientY - bounds.top - myPointer.clientHeight / 2;
-//     myPointer.classList.add('mouse-pointer');
-//     myPointer.style.display = 'block';
-//     myPointer.style.left = xPos +'px';
-//     myPointer.style.top = yPos +'px';
-// }
-
-// function hideMousePointer() {
-//     myPointer.style.display = 'none';
-// }
 
 
 

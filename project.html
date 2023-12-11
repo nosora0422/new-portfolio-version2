@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global-style.css">
     <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z547REBZN3"></script>
@@ -56,12 +59,15 @@
         <section class="home-banner">
             <div class="spline">
                 <canvas id="canvas3d"></canvas>
-                <a class="logo" href="https://spline.design"></a>
             </div>
             <div class="grid banner-wrapper">
                 <div class="col-12 banner-content banner-about">
                     <div class="banner-title">
-                        <h1>PROJECT</h1>
+                        <div class="banner-avatar-box">
+                            <h1>PROJECT</h1>
+                            <img class="avatar" 
+                            src="images/project-avatar.png" alt="iphone-avatar">
+                        </div>
                         <h2>I LEARN FROM</h2>
                         <h2 id="about-anim">CHALLENGES<span class="point-dot point-dot-blue"></span></h2>
                         <p class="body--gray" id="project-banner-discription">Check out my projects that show what I’m most passionate about!</p>
@@ -77,10 +83,12 @@
         <section class="grid about-project" id="development">
             <div class="col-12 home-project-wrapper">
                 <div class="section-discription">
+                    <h3 class="reveal-type">ENJOYABLE<span class="point-dot"></span></h3>
+                    <h3 class="reveal-type">REUSABLE<span class="point-dot"></span></h3>
+                    <h3 class="reveal-type">MAINTAINABLE<span class="point-dot"></span></h3>
                     <h3>WEB DEVELOPMENT<span class="point-dot"></span></h3>
-                    <p class="body--gray">I like building solutions that are reusable and maintainable.</p>
                 </div>
-                <div class="grid">
+                <div class="grid project-master-box">
                     <div class="col-12 col-6-md col-12-lg m-project-card-item">
                         <div class="grid project-content-box-wrapper" id="project1">
                             <div class="col-12 col-6-lg project-thumbnail project1-img"></div>
@@ -163,7 +171,7 @@
                     <h3>CONNECTED<span class="point-dot point-dot-blue"></span></h3>
                 </div>
                 <div class="contact-message">
-                    <p class="body--gray">Feel free to reach out to me with any questions about me and my projects!  I'm here and ready to collaborate with you on any interesting web development project!</p>
+                    <p class="body--gray">Feel free to reach out to me with any questions about me and my projects! I'm here and ready to collaborate with you on any interesting web development project!</p>
                     <div class="contact-social-media-icons">
                         <a href="http://www.linkedin.com/in/sora-noh" target="new"><i class="fa-brands fa-linkedin fa-lg contact-icon icon--gray"></i></a>
                         <a href="mailto:nosora0422@gmail.com"><i class="fa-solid fa-at fa-lg contact-icon icon--gray"></i></a>
@@ -172,7 +180,6 @@
                 </div>
             </div>
         </section>
-        <a class="logo" href="https://spline.design"></a>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/myscript.js"></script>
@@ -184,6 +191,7 @@
         }
       }
     </script>
-    <script type="module" src="white_banner/src/main.js"></script>
+    <script type="module" src="asset/white_banner/src/main.js"></script>
+    <script src="js/text-scroll.js"></script>
 </body>
 </html>
