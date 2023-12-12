@@ -1103,6 +1103,7 @@ code{
 
     .footer-wrapper{
         display: flex;
+        padding: 20px 24px;
     }
 
     .social-media-box{

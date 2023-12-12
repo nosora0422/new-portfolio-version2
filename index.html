@@ -5,24 +5,39 @@
     <meta name="description" content="As a passionate front-end developer, I thrive on challenges, employing code as a solution. Eager to collaborate on web development projects. Explore my portfolio for my impactful web development work!">
     <meta name="keywords" content="Front-end Coding Web-development HTML CSS JS FIGMA JavaScript Featured-project Recommendations Contact">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo-favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z547REBZN3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z547REBZN3');
+    </script>
     <script src="https://kit.fontawesome.com/1a72bf9d1c.js" crossorigin="anonymous"></script>
     <title>Home</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/flickity.min.css">
     <link rel="stylesheet" href="css/global-style.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z547REBZN3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z547REBZN3');
-</script>
 <body>
     <header>
-        <nav class="mobile-nav">
+        <nav class="d-nav">
+            <div class="d-nav-wrapper">
+                <div class="d-logo-wrapper">
+                    <a href="index.html"><img src="images/logo-gray-transp.png" class="d-nav-logo" alt="logo-img"></a>
+                </div>
+                <div class="d-nav-bar">
+                    <ul>
+                        <li><a class="d-nav-link active" href="index.html">HOME<span class="point-dot"></span></a></li>
+                        <li><a class="d-nav-link" href="about.html">ABOUT</a></li>
+                        <li><a class="d-nav-link" href="project.html">PROJECT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="mobile-nav"> 
             <div class="m-nav-wrapper">
                 <div class="mobile-nav-bar">
                     <a href="index.html"><img src="images/Logo-white.png" class="nav-logo" alt="logo-img"></a>
@@ -36,20 +51,6 @@
                     <li><a class="m-nav-link" href="about.html">ABOUT</a></li>
                     <li><a class="m-nav-link" href="project.html">PROJECT</a></li>
                 </ul>
-            </div>
-        </nav>
-        <nav class="d-nav">
-            <div class="d-nav-wrapper">
-                <div class="d-logo-wrapper">
-                    <a href="index.html"><img src="images/logo-gray-transp.png" class="d-nav-logo" alt="logo-img"></a>
-                </div>
-                <div class="d-nav-bar">
-                    <ul>
-                        <li><a class="d-nav-link active" href="index.html">HOME<span class="point-dot"></span></a></li>
-                        <li><a class="d-nav-link" href="about.html">ABOUT</a></li>
-                        <li><a class="d-nav-link" href="project.html">PROJECT</a></li>
-                    </ul>
-                </div>
             </div>
         </nav>
     </header>
@@ -87,7 +88,7 @@
                         <h3>FEATURED</h3>
                         <h3>PROJECTS<span class="point-dot"></span></h3>
                     </div>
-                    <p class="body--gray">I've achieved the project goals by focusing on creative design and coding to solve problems. </p>
+                    <p class="body--gray">I've achieved the project goals by focusing on buiding useful, reusable, and maintainable code to solve problems. </p>
                 </div>
                 <div class="grid">
                     <div class="col-12 col-6-md col-12-lg m-project-card-item d-project-card-item">

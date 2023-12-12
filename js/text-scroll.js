@@ -3,7 +3,6 @@ const splitTypes = document.querySelectorAll('.reveal-type');
 
 splitTypes.forEach((char,i) => {
 const text = new SplitType(char, { types: 'chars'});
-console.log(text);
 gsap.from(text.chars, {
 scrollTrigger:{
     trigger: char,
